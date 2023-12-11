@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image 
       run: |
           docker build -t silvester022/graphql:0.0.2 .
+          docker build -t silvester022/graphql:latest .
     
     - name: Push Docker Image 
       run: |
           docker push silvester022/graphql:0.0.2
+          docker push silvester022/graphql:latest
 
 
 
